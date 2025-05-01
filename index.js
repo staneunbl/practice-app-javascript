@@ -111,15 +111,20 @@ printATriangle();
 
 function findLargestNumber() {
     let num = [2, 3, 4, 10, 30];
-    // let max = Math.random(Math.random() * 100);
+    // Step 1: Start by setting `max` to the first number in the array
     let max = num[0];
 
+    // console.log(num[0]);
+
+    // Step 2: Loop through the array
     for (let i = 0; i < num.length; i++) {
-        console.log(num[i]);
-        if (max >= num[i]) {
+        // Step 3: If the current number is greater than `max`, update `max`
+        if (num[i] > max ) {
+            max = num[i];
         }
-        console.log(`The variable Max ${max} is greater than ${num[i]}`);
+        // Step 4: After the loop, print the largest number
     }
+    console.log(`The Largest Number between ${num} is: ${max}`)
 }
 
 findLargestNumber();
@@ -130,3 +135,70 @@ function findLargestNumberVer2() {
 }
 
 findLargestNumberVer2();
+
+// Remove Duplicates from an Array
+var arr = ["banana", "apple", "banana", "orange"];
+
+function removeDuplicatesArray(data) {
+    return data.filter((value, index ) => data.indexOf(value) === index);
+
+    // value: Represents the current value of the element in the array (e.g., "banana", "apple").
+    // index: Represents the current index of that value in the array (e.g., 0 for "banana", 1 for "apple").
+
+    // data.indexOf(value): This returns the first index of the occurrence of the current value in the array.
+    // index: This represents the current index in the loop provided by filter().
+}
+
+let result = removeDuplicatesArray(["banana", "apple", "banana", "orange", "melon"]);
+console.log(result);
+
+console.log(removeDuplicatesArray(arr));
+
+// FizzBuzz
+
+// Write a function that prints the numbers from 1 to 100. But for multiples of 3, 
+// print "Fizz" instead of the number, and for the multiples of 5, print "Buzz". 
+// For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+
+function FizzBuzz() {
+    for (let i = 0; i <=100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log("FizzBuzz"); 
+        } else if (i % 3 == 0) {
+            console.log("Fizz");
+        } else if (i % 5 == 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+FizzBuzz();
+
+// Find the Missing Number in an Array
+
+var arr = [1, 2, 4, 5];
+
+function findMissing(numbers) {
+    // Step 1: Figure out what n is
+
+    // Step 2: Get expected total sum
+    // Step 3: Get actual sum from array
+    // Step 4: Subtract and return the missing number
+}
+
+// 
+
+function checkOddOrEvenPartNth() {
+    for (let i = 0; i <=30; i++) {
+        if (i % 2 === 1) {
+            console.log(`The number ${i} is Even`);
+        } else {
+            console.log(`The number ${i} is Odd`);
+        }
+    }
+}
+
+checkOddOrEvenPartNth();
+
