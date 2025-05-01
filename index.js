@@ -108,3 +108,25 @@ function printATriangle() {
 }
 
 printATriangle();
+
+function findLargestNumber() {
+    let num = [2, 3, 4, 10, 30];
+    // let max = Math.random(Math.random() * 100);
+    let max = num[0];
+
+    for (let i = 0; i < num.length; i++) {
+        console.log(num[i]);
+        if (max >= num[i]) {
+        }
+        console.log(`The variable Max ${max} is greater than ${num[i]}`);
+    }
+}
+
+findLargestNumber();
+
+function findLargestNumberVer2() {
+    const num = [2, 3, 5, 21, 100, 230];
+    console.log(Math.max(...num));
+}
+
+findLargestNumberVer2();
