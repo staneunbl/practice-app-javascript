@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Practice App</title>
     <script src="index.js"></script>
 </head>
+
 <body>
     <h1>Hello, HTML and JavaScript!</h1>
     <h2>Countdown to My Birthday</h2>
     <div id="demo"></div>
+    <hr>
+    <div style="padding: 1rem">
+        <h1>04/05/2025 - Exercise </h1>
+        <h3>Parse and add values from strings.</h3>
+        <input type="text" placeholder="Enter value 1" id="value1"> <br>
+        <input style="margin-top: 5px" type="text" placeholder="Enter value 2" id="value2"> <br>
+        <button style="margin-top: 5px" onClick="parseAddValues()">Add Parsed Values</button>
+        <p id="result"></p>
+
+        <h3>Create a function convertTemp(celsius) that returns Fahrenheit.</h3>
+        <input type="number" placeholder="Enter temperature celsius" id="temp1">
+        <button style="margin-top: 5px" onClick="convertTemp()">Convert</button>
+        <p id="output"></p>
+
+        <h3>Write a function that takes a number and returns "Even" or "Odd"</h3>
+        <input type="text" placeholder="Enter a value" id="numberInput">
+        <button style="margin-top: 2px" onClick="inputOddEven()">Submit</button>
+        <p id="answer"></p>
+        
+        <h3>Calculate for Cat Age</h3>
+        <input type="date" id="catInput">
+        <label for="date">Enter the Date the cat was conceived</label><br>
+        <button style="margin-top: 5px" onClick="catAge()">Submit Date</button>
+        <p id="catAnswer"></p> 
+
+        <h3>Create a function convertMinutes(minutes)</h3>
+        <input type="text" id="minutesInput"><br>
+        <label for="text">Enter a minutes value</label><br>
+        <button style="margin-top: 8px" onClick="convertMinutes()">Submit</button>
+        <p id="minutesAnswer"></p> 
+        
+    </div>
 </body>
+
 </html>
